@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.scss',
 })
 export class HomeComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
+
