@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Main Video Section -->
+    <div class="col-md-8">
+      <div class="ratio ratio-16x9 mb-3">
+        <iframe [src]="selectedVideoUrl | safeUrl" allowfullscreen></iframe>
+      </div>
+
+      <!-- Notes and Completion Section -->
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Notes</h5>
+          <textarea class="form-control mb-3" rows="4" placeholder="Write your notes here..."></textarea>
+          <button class="btn btn-success">Mark as Complete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          Training Sections
+        </div>
+        <ul class="list-group list-group-flush">
+          <li 
+            class="list-group-item" 
+            *ngFor="let section of trainingSections" 
+            (click)="selectVideo(section.videoUrl)"
+            style="cursor: pointer;">
+            {{ section.title }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

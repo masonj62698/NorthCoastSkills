@@ -1,60 +1,43 @@
 <div class="container-fluid px-4">
-  <!-- Header -->
-  <header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
-    <div class="d-flex align-items-center gap-3">
-      <img src="assets/company_logo.png" alt="Logo" class="img-fluid" style="height: 100px;" />
-      <!-- <h1 class="h4 mb-0 fw-bold text-primary">North Coast Skills</h1> -->
-    </div>
-    <div class="d-flex justify-content-center my-3">
-      <nav class="d-none d-md-flex gap-4">
-        <a href="#" class="nav-link text-dark">Home</a>
-        <a href="#" class="nav-link text-dark">Training</a>
-        <a href="#" class="nav-link text-dark">Schedule</a>
-        <a href="#" class="nav-link text-dark">Contact</a>
-      </nav>
-    </div>
-
-    <button class="btn btn-outline-primary d-md-none" (click)="toggleMenu()">☰</button>
-  </header>
-
-  <!-- Mobile Nav -->
-  @if (menuOpen) {
-    <nav class="d-md-none mb-4">
-      <ul class="nav flex-column bg-light p-3 rounded shadow-sm">
-        <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-dark">Training</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-dark">Schedule</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-dark">Contact</a></li>
-      </ul>
-    </nav>
-  }
+  <app-header></app-header>
 
   <!-- Main Content -->
   <main>
     <section class="bg-light p-5 rounded-3 shadow-sm mb-5">
       <h2 class="display-5 fw-semibold text-center mb-3">Welcome to North Coast Skills</h2>
-      <p class="lead text-center">A site dedicated to improving the skills of young athletes through expert training and community support.</p>
-      <div class="text-center mt-4">
-        <button class="btn btn-lg btn-primary">Select a Program</button>
-      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="pt-2 mt-2 border-top bg-white">
-    <div class="row">
-      <div class="col-md-6">
-        <p class="text-muted">&copy; 2025 North Coast Skills | All rights reserved</p>
-      </div>
-      <div class="col-md-6">
-        <h5 class="fw-bold">Contact Us</h5>
-        <p>Have questions before buying into the program?</p>
-        <ul class="list-unstyled">
-          <li><strong>Email:</strong> northcoastskills@gmail.com
-          <li><strong>Phone:</strong> 216-965-9597
-          <li><strong>Location:</strong> Avon, OH                      
-        </ul>
-      </div>
+  <div class="container my-3">
+    <h2 class="display-6 fw-semibold text-center mb-3">What Are We About?</h2>
+  <div class="row text-center">
+    <!-- Column 1 -->
+    <div class="col-md-4 mb-4">
+      <img src="assets/company_logo.png" class="img-fluid rounded mb-3" alt="Header 1">
+      <h4 class="fw-bold">Leadership</h4>
+      <p>
+        This is the content for the first column. You can add text, links, or buttons here.
+      </p>
     </div>
-  </footer>
+
+    <!-- Column 2 -->
+    <div class="col-md-4 mb-4">
+      <img src="assets/company_logo_no_text.png" class="img-fluid rounded mb-3" alt="Header 2">
+      <h4 class="fw-bold">Subtitle Two</h4>
+      <p>
+        This is the content for the second column. Customize it with your own information.
+      </p>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="col-md-4 mb-4">
+      <img src="assets/company_logo.png" class="img-fluid rounded mb-3" alt="Header 3">
+      <h4 class="fw-bold">Subtitle Three</h4>
+      <p>
+        This is the content for the third column. Add whatever you need here.
+      </p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
 </div>
