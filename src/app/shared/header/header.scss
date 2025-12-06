@@ -1,6 +1,6 @@
 header {
     background-color: #1C1C1C;
-    height: 150px;
+    height: 100px;
 }
 
 .text-primary {
@@ -8,7 +8,7 @@ header {
 }
 
 .logo {
-  max-height: 150px;   // keeps header compact
+  max-height: 125px;
   height: auto;
   width: auto;
 }
@@ -19,4 +19,8 @@ header {
   &:hover {
     color: #ffffff !important;
   }
+}
+
+.ps-6 {
+  padding-left: 4rem; /* 64px */
 }

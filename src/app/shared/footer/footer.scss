@@ -5,3 +5,11 @@ footer {
 img {
     max-height: 100px;
 }
+
+a {
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: #ffffff !important;
+  }
+}

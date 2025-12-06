@@ -1,24 +1,24 @@
-<div class="container-fluid">
+<div class="container-fluid my-3">
   <div class="row">
     <!-- Main Video Section -->
     <div class="col-md-8">
-    <div class="card mb-3 shadow-sm">
-      <div class="card-body p-0">
-        <div class="ratio ratio-16x9">
-          <iframe [src]="selectedVideoUrl | safeUrl" allowfullscreen></iframe>
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe [src]="selectedVideoUrl | safeUrl" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
 
 
-      <!-- Notes and Completion Section -->
-      <div class="card mt-3">
-        <div class="card-body">
-          <h5 class="card-title">Notes</h5>
-          <textarea class="form-control mb-3" rows="4" placeholder="Write your notes here..."></textarea>
-          <button class="btn btn-success">Mark as Complete</button>
-        </div>
-      </div>
+        <!-- Notes and Completion Section -->
+        <!-- <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Notes</h5>
+            <textarea class="form-control mb-3" rows="4" placeholder="Write your notes here..."></textarea>
+            <button class="btn btn-success">Mark as Complete</button>
+          </div>
+        </div> -->
     </div>
 
     <!-- Sidebar Section -->
