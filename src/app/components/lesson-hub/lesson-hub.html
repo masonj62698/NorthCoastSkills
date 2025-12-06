@@ -2,9 +2,14 @@
   <div class="row">
     <!-- Main Video Section -->
     <div class="col-md-8">
-      <div class="ratio ratio-16x9 mb-3">
-        <iframe [src]="selectedVideoUrl | safeUrl" allowfullscreen></iframe>
+    <div class="card mb-3 shadow-sm">
+      <div class="card-body p-0">
+        <div class="ratio ratio-16x9">
+          <iframe [src]="selectedVideoUrl | safeUrl" allowfullscreen></iframe>
+        </div>
       </div>
+    </div>
+
 
       <!-- Notes and Completion Section -->
       <div class="card mt-3">

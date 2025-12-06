@@ -1,9 +1,18 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home';
 import { LessonHubComponent } from './components/lesson-hub/lesson-hub';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'lessons', component: LessonHubComponent }
-
+    { path: 'lessons', component: LessonHubComponent },
+    { path: 'inquiries', loadComponent: () => import('./pages/inquiries/inquiries').then(m => m.InquiryComponent) }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled' // restores to top on navigation
+  })],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

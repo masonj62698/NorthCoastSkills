@@ -1,15 +1,16 @@
-<header class="d-flex align-items-center py-3 mb-4 border-bottom sticky-top">
+<header class="d-flex align-items-center py-3 border-bottom sticky-top">
   <!-- Logo pinned left -->
   <div class="d-flex align-items-center gap-3">
-    <img src="assets/fulllogo_transparent.png" alt="Logo" class="img-fluid logo" />
+    <a href=""><img src="assets/fulllogo_transparent.png" alt="Logo" class="img-fluid logo"/></a>
   </div>
 
   <!-- Nav absolutely centered -->
   <nav class="d-none d-xl-flex gap-4 position-absolute top-50 start-50 translate-middle fw-bold fs-4">
-    <a href="#" class="nav-link text-primary border-end pe-4">Home</a>
+    <a routerLink="" class="nav-link text-primary border-end pe-4">Home</a>
     <a routerLink="/lessons" class="nav-link text-primary border-end pe-4">Training</a>
-    <a href="#" class="nav-link text-primary border-end pe-4">Schedule</a>
-    <a href="#" class="nav-link text-primary">Contact</a>
+    <a routerLink="#" class="nav-link text-primary border-end pe-4">Packages</a>
+    <a routerLink="/inquiries" class="nav-link text-primary border-end pe-4">Inquiries</a>    
+    <a routerLink="#" class="nav-link text-primary">About Us</a>
   </nav>
 
   <!-- Right side buttons (desktop) -->
@@ -26,8 +27,9 @@
     <nav class="d-xl-none mb-4">
       <ul class="nav flex-column bg-light p-3 rounded shadow-sm">
         <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-        <li class="nav-item"><a routerLink="/lessons" class="nav-link text-dark">Training</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-dark">Schedule</a></li>
+        <li class="nav-item"><a href="/lessons" class="nav-link text-dark">Training</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark">Packages</a></li>
+        <a href="/inquiries" class="nav-link text-dark border-end pe-4">Inquiries</a>    
         <li class="nav-item"><a href="#" class="nav-link text-dark">Contact</a></li>
       </ul>
     </nav>

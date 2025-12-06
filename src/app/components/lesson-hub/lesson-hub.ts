@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./lesson-hub.scss']
 })
 export class LessonHubComponent {
-  selectedVideoUrl = 'https://www.youtube.com/embed/VIDEO_ID_1';
+  selectedVideoUrl = 'https://www.youtube.com/embed/3INppw2Vpug?si=n8oonqIMQyrzp-hk';
 
   trainingSections = [
     { title: 'Warm-Up Drills', videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_1' },

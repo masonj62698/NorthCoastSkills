@@ -1,7 +1,8 @@
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.card iframe {
+  border-radius: 0.5rem;   // rounded corners on the video
 }
 
-textarea {
-  resize: vertical;
+.card {
+  border: 1px solid #ddd;  // lighter border
+  background-color: #f8f9fa; // soft background
 }

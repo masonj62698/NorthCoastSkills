@@ -1,0 +1,69 @@
+<div class="container my-5">
+  <h2 class="text-dark mb-4">Contact Us</h2>
+  <p class="text-dark mb-4">
+    Have questions before joining the program? Submit an inquiry using the form below, and we'll get back to you as soon as possible. You may also contact us via any of the methods below this form.
+  </p>
+
+  <form (ngSubmit)="onSubmit()" #inquiryForm="ngForm" class="p-4 border rounded shadow-sm bg-light">
+    <div class="row">
+      <!-- First Name -->
+      <div class="col-md-6 mb-3">
+        <label for="firstName" class="form-label fw-bold">First Name:</label>
+        <input type="text" id="firstName" name="firstName" class="form-control" required [(ngModel)]="inquiry.firstName">
+      </div>
+
+      <!-- Last Name -->
+      <div class="col-md-6 mb-3">
+        <label for="lastName" class="form-label fw-bold">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" required [(ngModel)]="inquiry.lastName">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Phone Number -->
+      <div class="col-md-6 mb-3">
+        <label for="phone" class="form-label fw-bold">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required [(ngModel)]="inquiry.phone">
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-6 mb-3">
+        <label for="email" class="form-label fw-bold">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="inquiry.email">
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="mb-3">
+      <label for="message" class="form-label fw-bold">Additional Info:</label>
+      <textarea id="message" name="message" rows="4" class="form-control" [(ngModel)]="inquiry.message"></textarea>
+    </div>
+
+    <!-- Submit -->
+    <div class="d-flex justify-content-end">
+    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+    </div>
+  </form>
+
+<div class="mt-4">
+  <!-- Phone -->
+  <div class="d-flex align-items-center mb-3">
+    <i class="bi bi-telephone-fill text-primary me-2"></i>
+    <span class="text-dark fw-bold">+1 (216) 965-9597</span>
+  </div>
+
+  <!-- Email -->
+  <div class="d-flex align-items-center mb-3">
+    <i class="bi bi-envelope-fill text-primary me-2"></i>
+    <span class="text-dark fw-bold">admiraltraining@gmail.com</span>
+  </div>
+
+  <!-- Instagram -->
+  <div class="d-flex align-items-center w-75">
+    <a href="https://www.instagram.com/yourusername" target="_blank" class="text-primary">
+    <i class="bi bi-instagram"></i>
+    </a>
+  </div>
+</div>
+
+</div>
