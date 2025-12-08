@@ -1,0 +1,19 @@
+<div class="card h-100 shadow-sm">
+  <!-- Banner/Header -->
+  <div class="card-header bg-charcoal text-white text-center fw-bold">
+    {{ product.name }}
+  </div>
+
+  <div class="card-body d-flex flex-column">
+    <ul class="list-unstyled mb-3">
+      <li *ngFor="let item of product.description">
+        <i class="bi bi-check-circle text-success me-2"></i>{{ item }}
+      </li>
+    </ul>
+
+    <p *ngIf="product.price" class="fw-bold text-success">Price: ${{ product.price }}</p>
+    <p *ngIf="!product.price" class="fw-bold text-warning">Price dependent on location/travel</p>
+
+    <button class="btn btn-outline-light bg-primary mt-auto">Enroll Now</button>
+  </div>
+</div>

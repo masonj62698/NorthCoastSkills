@@ -5,13 +5,25 @@
   </div>
 
   <!-- Nav absolutely centered -->
-  <nav class="d-none d-xl-flex gap-4 position-absolute top-50 start-50 translate-middle fw-bold fs-4 ps-6">
-    <a routerLink="" class="nav-link text-primary border-end pe-4">Home</a>
-    <a routerLink="/lessons" class="nav-link text-primary border-end pe-4">Training</a>
-    <a routerLink="#" class="nav-link text-primary border-end pe-4">Packages</a>
-    <a routerLink="/inquiries" class="nav-link text-primary border-end pe-4">Inquiries</a>    
-    <a routerLink="#" class="nav-link text-primary">About Us</a>
-  </nav>
+<nav class="d-none d-xl-flex gap-4 position-absolute top-50 start-50 translate-middle fw-bold fs-4 ps-6">
+  <a routerLink="" class="nav-link text-primary border-end pe-4">Home</a>
+
+  <!-- Dropdown example -->
+<div class="dropdown border-end pe-4">
+    <a class="nav-link text-primary dropdown-toggle" href="#" id="trainingDropdown" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+      Training
+    </a>
+    <ul class="dropdown-menu custom-dropdown" aria-labelledby="trainingDropdown">      
+      <li><a class="dropdown-item" routerLink="/lessons">Lessons</a></li>
+      <li><a class="dropdown-item" routerLink="/fundamentals">Fundamentals</a></li>
+    </ul>
+  </div>
+  <a class="nav-link text-primary border-end pe-4" routerLink="/packages">Packages</a>
+  <a class="nav-link text-primary border-end pe-4" routerLink="/inquiries">Inquiries</a>
+  <a routerLink="/about" class="nav-link text-primary">About Us</a>
+</nav>
+
 
   <!-- Right side buttons (desktop) -->
   <div class="ms-auto d-none d-xl-flex gap-3">

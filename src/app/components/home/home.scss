@@ -1,0 +1,30 @@
+.carousel .blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #1c1c1c;
+}
+
+.carousel .blockquote-footer {
+  margin-top: 0.5rem;
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--bs-primary); 
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #1c1c1c; 
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.bg-charcoal {
+  background-color: #1c1c1c;
+}

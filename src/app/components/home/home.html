@@ -3,41 +3,109 @@
   <main class="pt-3">
     <section class="bg-light p-5 rounded-3 shadow-s mb-5">
       <h2 class="display-5 fw-semibold text-center mb-3">Control The Game.</h2>
-      <div class="text-center">We exist to provide elite level training for all levels. Add more about who we are and whatever information we deem important here.</div>
+      <div class="text-center">
+        We exist to provide elite level training for all levels. Add more about who we are and whatever information we deem important here.
+      </div>
     </section>
   </main>
 
+  <!-- Our Focus (existing) -->
   <section class="bg-light p-5 rounded-3 shadow-s mb-5">
     <div class="container my-3">
       <h2 class="display-6 fw-semibold text-center mb-3">Our Focus</h2>
       <div class="row text-center">
-        <!-- Column 1 -->
+        <!-- Columns -->
         <div class="col-md-4 mb-4">
-          <img src="assets/icononly_transparent.png" class="img-fluid rounded mb-3" alt="Header 1">
+          <img src="assets/fulllogo.png" class="img-fluid rounded mb-3" alt="Header 1">
           <h4 class="fw-bold">Leadership</h4>
-          <p>
-            This is the content for the first column. You can add text, links, or buttons here.
-          </p>
+          <p>We help athletes grow into leaders on and off the field.</p>
         </div>
-
-        <!-- Column 2 -->
         <div class="col-md-4 mb-4">
           <img src="assets/textonly.png" class="img-fluid rounded mb-3" alt="Header 2">
           <h4 class="fw-bold">Fundamentals</h4>
-          <p>
-            This is the content for the second column. Customize it with your own information.
-          </p>
+          <p>Strong fundamentals are the foundation of elite performance.</p>
         </div>
-
-        <!-- Column 3 -->
         <div class="col-md-4 mb-4">
-          <img src="assets/icononly_transparent.png" class="img-fluid rounded mb-3" alt="Header 3">
+          <img src="assets/grayscale.png" class="img-fluid rounded mb-3" alt="Header 3">
           <h4 class="fw-bold">Knowledge</h4>
-          <p>
-            This is the content for the third column. Add whatever you need here.
-          </p>
+          <p>We provide the insights and strategies to outsmart the competition.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Full-width image banner -->
+  <section class="my-5">
+    <div class="bg-charcoal text-white text-center p-5 rounded-3 shadow-s">
+      <h2 class="display-6 fw-semibold mb-3">Train With Purpose</h2>
+      <p class="lead">Our programs are designed to elevate every aspect of your game.</p>
+      <img src="assets/training-banner.jpg" class="img-fluid rounded mt-4" alt="Training Banner">
+    </div>
+  </section>
+
+  <!-- Alternating text + image block -->
+  <section class="my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="assets/fulllogo.jpg" class="img-fluid rounded shadow-sm" alt="Training Session">
+      </div>
+      <div class="col-md-6 p-4">
+        <h3 class="fw-bold">Personalized Coaching</h3>
+        <p>Every athlete has unique strengths and areas to improve. Our coaches tailor sessions to maximize growth.</p>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Another alternating block (reverse order) -->
+  <section class="my-5 bg-light p-4 rounded-3 shadow-s">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <img src="assets/grayscale.png" class="img-fluid rounded shadow-sm" alt="Game Film Review">
+      </div>
+      <div class="col-md-6 order-md-1 p-4">
+        <h3 class="fw-bold">Film Review Sessions</h3>
+        <p>Break down your performance with expert analysis. Learn to see the game like a pro.</p>
+        <button class="btn btn-outline-primary">Book a Session</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Carousel -->
+  <section class="my-5">
+    <h2 class="display-6 fw-semibold text-center mb-4">What Our Athletes Say</h2>
+    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>"This program completely changed how I approach the game."</p>
+            <footer class="blockquote-footer">Alex, Varsity Player</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"The film sessions gave me insights I never had before."</p>
+            <footer class="blockquote-footer">Jordan, Freshman</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Training here pushed me to a new level of performance."</p>
+            <footer class="blockquote-footer">Taylor, All-American</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
   </section>
 </div>

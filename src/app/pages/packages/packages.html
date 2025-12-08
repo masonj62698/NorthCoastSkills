@@ -1,0 +1,8 @@
+<div class="container my-5">
+  <h1 class="text-center mb-4">Our Training Packages</h1>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let product of products">
+      <app-products [product]="product"></app-products>
+    </div>
+  </div>
+</div>
