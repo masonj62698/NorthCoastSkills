@@ -25,18 +25,22 @@ header {
   padding-left: 4rem; /* 64px */
 }
 
-/* Custom dropdown styling */
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
 .custom-dropdown {
-  background-color: #1c1c1c;         /* dark background */
+  background-color: #1c1c1c; 
   border: none;
   border-radius: 0.5rem;
   opacity: 0;
   transform: translateY(10px);
   visibility: hidden;
-  transition: all 0.25s ease;        /* smooth transition */
+  transition: all 0.25s ease;
 }
 
-/* Show on hover */
 .dropdown:hover .custom-dropdown {
   opacity: 1;
   transform: translateY(0);
@@ -45,10 +49,11 @@ header {
 
 /* Dropdown items */
 .custom-dropdown .dropdown-item {
-  color: var(--bs-primary);          /* Bootstrap primary color */
+  color: var(--bs-primary);    
   transition: background-color 0.2s ease;
 }
 
 .custom-dropdown .dropdown-item:hover {
-  background-color: rgba(255,255,255,0.05); /* subtle hover highlight */
+  background-color: rgba(255,255,255,0.05); 
 }
+

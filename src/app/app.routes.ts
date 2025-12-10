@@ -7,7 +7,9 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'lessons', component: LessonHubComponent },
     { path: 'inquiries', loadComponent: () => import('./pages/inquiries/inquiries').then(m => m.InquiryComponent) },
-    { path: 'packages', loadComponent: () => import('./pages/packages/packages').then(m => m.Packages) }
+    { path: 'packages', loadComponent: () => import('./pages/packages/packages').then(m => m.Packages) },
+    { path: 'fundamentals', loadComponent: () => import('./pages/fundamentals/fundamentals').then(m => m.Fundamentals) },
+    { path: 'about-us', loadComponent: () => import('./pages/about-us/about-us').then(m => m.AboutUs) },
 ];
 
 @NgModule({
